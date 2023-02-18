@@ -1,0 +1,171 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+p{text-align: center;}
+
+/*header*/
+
+header{
+    background-color: grey;
+    padding: 20px 0;
+}
+.box{
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right:  auto;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+/*fim do header*/
+
+.banner{
+    width: 100%;
+    height: 550px;
+}
+
+/*article principal*/
+.principal{
+    padding: 3em 0;
+    background-color: #FEFEFE;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+.principal p{
+    margin: 0 0 1em;
+    text-align: center;
+}
+.principal strong{
+    font-weight: bold;
+}
+.principal em{
+    font-style: italic;
+}
+.utencilios{
+    width: 150px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+/*fim do article principal*/
+
+/*article mapa*/
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient( #FEFEFE, #888888);
+   
+}
+.mapa p{
+    margin: 0 0 2em;
+}
+.localização{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*fim article mapa*/
+
+/*article beneficios*/
+.beneficios{
+    padding: 3em 0;
+    background-color: #888888;
+  
+    margin-left: auto;
+    margin-right: auto;
+}
+.conteudo-beneficios{
+    width: 640px;
+    margin:0 auto ;
+}
+.lista-beneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+.itens{
+    line-height: 1.5;
+}
+.itens:first-child{
+    font-weight: bold;
+}
+.itens:before {
+    content: "★"
+}
+.imagembeneficios{
+    width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px black;
+}
+.imagembeneficios:hover {
+
+    opacity: 0.3;
+    box-shadow: 10px 10px 10px black;
+}
+.video{
+    width: 560px;
+    margin: 2em auto;
+    }
+/*fim article beneficios*/
+
+
+footer{
+    text-align: center;
+    background: url(/img/bg.jpg);
+    padding: 40px 0;
+   
+}
+footer p{
+    margin: 20px 0 0;
+    color: white;
+    font-size: 13px;
+}
+footer p:hover{
+    color: #C78C19;
+}
+
+@media screen and (max-width: 480px) { 
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position:static;
+    }
+    nav a{
+        font-size: 18px;
+    }
+    .lista-beneficios, imagem-beneficios {
+    width: 100%
+}
+}
